@@ -31,3 +31,6 @@ TaskBoard дозволяє створювати завдання, міняти �
 1. Склонуй репозиторій:
    ```bash
    git clone [https://github.com/kazanivska-sofia/taskboard-Kazanivska.git](https://github.com/kazanivska-sofia/taskboard-Kazanivska.git)
+
+
+   ![Скріншот TaskBoard](images/screenshot.png)
