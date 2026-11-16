@@ -19,7 +19,7 @@
     </header>
 
     <main class="container">
-        <section class="intro card">
+        <section class="intro">
             <h1>Дошка завдань</h1>
             <p>TaskBoard допоможе записувати справи, ставити пріоритети та відмічати виконане. Це навчальний проєкт курсу «Технології створення веб-застосунків».</p>
         </section>
@@ -28,11 +28,10 @@
             <h2>Нова задача</h2>
             <form id="task-form" class="task-form">
                 <div class="form-row">
-                    <label class="field field-grow">
+                    <label class="field grow">
                         <span>Назва</span>
                         <input type="text" id="title" name="title" placeholder="Наприклад: підготувати звіт" required maxlength="80">
                     </label>
-
                     <label class="field">
                         <span>Пріоритет</span>
                         <select id="priority" name="priority">
@@ -41,26 +40,30 @@
                             <option value="high">Високий</option>
                         </select>
                     </label>
-
                     <label class="field">
                         <span>Термін</span>
                         <input type="date" id="deadline" name="deadline">
                     </label>
                 </div>
-
                 <label class="field">
                     <span>Опис</span>
                     <textarea id="description" name="description" rows="3" placeholder="Додаткові деталі (необов'язково)"></textarea>
                 </label>
-
                 <button type="submit" class="btn">Додати задачу</button>
                 <p id="form-message" class="form-message" role="alert"></p>
             </form>
+        </section>
+
+        <section class="card">
+            <h2>Мої задачі</h2>
+            <p id="counter" class="counter">Задач немає</p>
+            <ul id="task-list" class="task-list"></ul>
         </section>
     </main>
 
     <footer class="site-footer">
         <p>&copy; 2026 TaskBoard - навчальний проєкт</p>
     </footer>
+    <script src="script.js" defer></script>
 </body>
 </html>
